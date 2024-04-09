@@ -1,0 +1,15 @@
+network:
+  version: 1
+  config:
+    - type: physical
+      name: eth0
+      subnets:
+         - type: static
+           address: xxx.xxx.xxx.xxx/24
+           gateway: xxx.xxx.xxx.xxx
+    - type: nameserver
+      interface: eth0
+      address:
+        - xxx.xxx.xxx.xxx
+      search:
+        - domain.com
